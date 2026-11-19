@@ -16,7 +16,7 @@ if not exist "%CSC%" (
 )
 
 echo Compiling SnapTool.exe ...
-"%CSC%" /nologo /target:winexe /optimize /out:SnapTool.exe SnapTool.cs /r:System.dll /r:System.Drawing.dll /r:System.Windows.Forms.dll
+"%CSC%" /nologo /target:winexe /optimize /win32icon:SnapTool.ico /out:SnapTool.exe SnapTool.cs /r:System.dll /r:System.Drawing.dll /r:System.Windows.Forms.dll
 
 if errorlevel 1 (
   echo [ERROR] Compile failed.

@@ -898,10 +898,16 @@ namespace SnapTool
             this.Controls.Add(_lblStatus);
         }
 
+        private static Icon ExtractAppIcon()
+        {
+            try { return Icon.ExtractAssociatedIcon(Application.ExecutablePath); }
+            catch { return SystemIcons.Application; }
+        }
+
         private void BuildTray()
         {
             _tray = new NotifyIcon();
-            _tray.Icon = SystemIcons.Application;
+            _tray.Icon = ExtractAppIcon();
             _tray.Text = "截图工具";
             _tray.Visible = true;
             _tray.DoubleClick += delegate { ShowMain(); };

@@ -69,7 +69,7 @@ build.bat
 或手动执行：
 
 ```bat
-C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /target:winexe /optimize ^
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /target:winexe /optimize /win32icon:SnapTool.ico ^
   /out:SnapTool.exe SnapTool.cs ^
   /r:System.dll /r:System.Drawing.dll /r:System.Windows.Forms.dll
 ```
