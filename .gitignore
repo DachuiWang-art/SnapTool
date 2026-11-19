@@ -1,0 +1,22 @@
+# 编译产物
+*.exe
+*.pdb
+*.ilk
+
+# 自检 / 调试产物
+selftest.log
+selftest_capture.png
+selftest_ink.png
+annotate_preview.png
+ui_preview.png
+
+# 打包
+*.zip
+
+# 本机自用说明（通用说明见 README）
+使用说明.txt
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
